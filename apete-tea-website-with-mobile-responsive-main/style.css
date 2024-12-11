@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    col
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #50b498;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+  }
+
+  .navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .navbar a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    z-index: -1;
+  }
+
+  .navbar a:hover {
+    color: #468585;
+  }
+
+  .navbar a:hover::before {
+    left: 0;
+  }
+
+  .navbar a:hover {
+    transform: scale(1.1);
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    size: 40px;
+    height: 2px;
+    width: 2px;
+    position: relative;
+    
+  }
+  /* home background video */
+
+  .video-background {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .video-background p{
+    position: relative;
+    z-index: 1;
+    
+  }
+  para{
+    position:absolute;
+    z-index: 1;
+  }
